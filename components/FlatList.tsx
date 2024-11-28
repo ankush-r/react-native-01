@@ -5,7 +5,7 @@ export default class FlatList extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text style = {styles.header}> Flat List </Text>
         <View style={styles.container}>
             <View style={[styles.card, styles.redCard]}>
                 <Text>Red</Text>
@@ -15,15 +15,6 @@ export default class FlatList extends Component {
             </View>
             <View style = {[styles.card,styles.greenCard]}>
                 <Text>Green</Text>
-            </View>
-            <View style={[styles.card, styles.redCard]}>
-                <Text>Red</Text>
-            </View>
-            <View style ={[styles.card, styles.blueCard]}>
-                <Text>Blue</Text>
-            </View>
-            <View style = {[styles.card,styles.greenCard]}>
-                <Text>sample</Text>
             </View>
         </View>
       </View>
@@ -39,6 +30,11 @@ const styles = StyleSheet.create({
         padding:10,
         margin:10,
         gap:10
+    },
+    header :{
+        fontSize:20,
+        fontWeight:600,
+        paddingHorizontal : 13,
     },
     card : {
         width:100,

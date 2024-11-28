@@ -8,6 +8,9 @@ import {
   ScrollView
 } from 'react-native'
 import FlatList from './components/FlatList';
+import ElevatedList from './components/ElevatedList';
+import FancyCard from './components/FancyCard';
+import InteractiveCard from './components/InteractiveCard';
 
 export default function App() : JSX.Element{
   const isDarkMode = useColorScheme() === 'dark';
@@ -17,9 +20,12 @@ export default function App() : JSX.Element{
       {/* <Text style ={isDarkMode ? styles.darkModeText : styles.lightModeText}>Hello World</Text>
       <Text>Hello World</Text>
       <Text>Hello World</Text> */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={true} >
+      <ScrollView showsVerticalScrollIndicator>
 
       <FlatList/>
+      <ElevatedList />
+      <FancyCard />
+      <InteractiveCard />
       </ScrollView>
       {/* </View> */}
     </SafeAreaView>
