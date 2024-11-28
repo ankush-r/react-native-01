@@ -23,7 +23,7 @@ export default class FlatList extends Component {
                 <Text>Blue</Text>
             </View>
             <View style = {[styles.card,styles.greenCard]}>
-                <Text>Green</Text>
+                <Text>sample</Text>
             </View>
         </View>
       </View>
