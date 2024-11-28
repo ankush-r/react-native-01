@@ -10,6 +10,7 @@ import {
 import FlatList from './components/FlatList';
 import ElevatedList from './components/ElevatedList';
 import FancyCard from './components/FancyCard';
+import InteractiveCard from './components/InteractiveCard';
 
 export default function App() : JSX.Element{
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,6 +25,7 @@ export default function App() : JSX.Element{
       <FlatList/>
       <ElevatedList />
       <FancyCard />
+      <InteractiveCard />
       </ScrollView>
       {/* </View> */}
     </SafeAreaView>
